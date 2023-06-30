@@ -3,14 +3,15 @@ import React from "react"
 export default function Navbar() {
 
     function burgerMenuClick(event) {
+        // show/hide the nav menu
         document.getElementById("burger--bars").classList.toggle("change");
         document.getElementById("burger--links").classList.toggle("change");
         document.getElementById("burger--background").classList.toggle("change-bg");
 
-
-        console.log(event.target.hash)
+        // scroll down to the correct segment while leaving enough room for the nav bar
+        event.preventDefault()
         if(event && event.target.tagName === "A") {
-            // window.scrollTo(0, document.getElementById(event.target.hash).offsetTop-50);
+            window.scrollTo(0, document.querySelector(event.target.hash).offsetTop-50);
         }        
     }
 

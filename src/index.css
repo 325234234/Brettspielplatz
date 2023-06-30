@@ -201,6 +201,21 @@ nav {
   font-family: "Supersonic", sans-serif;
 }
 
+.news--heading--accent {
+  position: relative;
+}
+
+.news--heading--accent:before {
+  position: absolute;
+  content: "";
+  height: .4em;
+  width: 70%;
+  bottom: .2em;
+  right: 1.25em;
+  z-index: -1;
+  background: #00B0B2;
+}
+
 .news {
   padding: 1em 0;
   border-bottom: 1px solid #C4D5CC;
@@ -215,6 +230,18 @@ nav {
 
 .news--content {
   white-space: pre-wrap;
+  padding-left: 1em;
+  position: relative;
+}
+
+.news--content:after {
+  content: '';
+  height: 60%; 
+  width: 3px;  
+  position: absolute;
+  top: 0; 
+  left: 0;  
+  background-color: #00B0B2;
 }
 
 .news--date {

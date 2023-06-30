@@ -25,7 +25,7 @@ export default function News() {
 
     return (
         <section className="section--news" id="section--news">
-            <h1 className="section--news--heading">Neuigkeiten</h1>
+            <h1 className="section--news--heading"><span className="news--heading--accent">Neuigkeiten</span></h1>
             {newsElements}
         </section>
     )
