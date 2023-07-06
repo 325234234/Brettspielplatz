@@ -1,6 +1,6 @@
 import React from "react"
 
-export default function Gamelist() {
+export default function Spiele() {
     return (
         <>Gamelist</>
     )

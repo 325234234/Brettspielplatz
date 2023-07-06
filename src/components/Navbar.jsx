@@ -1,6 +1,11 @@
 import React from "react"
+import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
+
+    const activeStyle = {
+        color: "#2A4359"
+    }
 
     function burgerMenuClick(event) {
         // show/hide the nav menu
@@ -8,11 +13,11 @@ export default function Navbar() {
         document.getElementById("burger--links").classList.toggle("change");
         document.getElementById("burger--background").classList.toggle("change-bg");
 
-        // scroll down to the correct segment while leaving enough room for the nav bar
-        event.preventDefault()
-        if(event && event.target.tagName === "A") {
-            window.scrollTo(0, document.querySelector(event.target.hash).offsetTop-50);
-        }        
+        // // scroll down to the correct segment while leaving enough room for the nav bar
+        // event.preventDefault()
+        // if(event && event.target.tagName === "A") {
+        //     window.scrollTo(0, document.querySelector(event.target.hash).offsetTop-50);
+        // }        
     }
 
     return (
@@ -26,12 +31,18 @@ export default function Navbar() {
                 </div>
                 <div className="burger--links" id="burger--links">
                     <ul>
-                        <li><a href="#section--news" onClick={burgerMenuClick}>Neuigkeiten</a></li>
-                        <li><a href="#" onClick={burgerMenuClick}>Kalender</a></li>
-                        <li><a href="#" onClick={burgerMenuClick}>Reservierungen</a></li>
-                        <li><a href="#" onClick={burgerMenuClick}>Spieleliste</a></li>
-                        <li><a href="#" onClick={burgerMenuClick}>Über uns</a></li>
-                        <li><a href="#" onClick={burgerMenuClick}>Kontakt</a></li>
+                        <li><NavLink to="/" onClick={burgerMenuClick} style={({ isActive }) => 
+                            isActive ? activeStyle : null}>Neuigkeiten</NavLink></li>
+                        <li><NavLink to="/kalender" onClick={burgerMenuClick} style={({ isActive }) => 
+                            isActive ? activeStyle : null}>Kalender</NavLink></li>
+                        <li><NavLink to="/reservierungen" onClick={burgerMenuClick} style={({ isActive }) => 
+                            isActive ? activeStyle : null}>Reservierungen</NavLink></li>
+                        <li><NavLink to="/about" onClick={burgerMenuClick} style={({ isActive }) => 
+                            isActive ? activeStyle : null}>Über uns</NavLink></li>
+                        <li><NavLink to="/kontakt" onClick={burgerMenuClick} style={({ isActive }) => 
+                            isActive ? activeStyle : null}>Kontakt</NavLink></li>
+                        <li><NavLink to="/spiele" onClick={burgerMenuClick} style={({ isActive }) => 
+                            isActive ? activeStyle : null}>Spiele</NavLink></li>
                     </ul>
                 </div> 
             </div>

@@ -36,7 +36,7 @@ html {
 .container {
   min-height: 100vh;
 
-  padding: 1em;
+  padding: 0 1em;
 
   display: flex;
   flex-direction: column;
@@ -93,7 +93,7 @@ nav {
 #burger--bars {
   width: 35px;
   height: 30px;
-  margin: .8em 1em 0 0;
+  margin: .8em 0 0 0;
   cursor: pointer;
   float: right;
 }
@@ -133,7 +133,7 @@ nav {
   padding: .5em 0;
 }
 
-.burger--links li a {
+.burger--links li a {   
   color: white;
   font-size: 1.5rem;
   text-decoration: none;
@@ -149,7 +149,7 @@ nav {
   z-index: 1;
   width: 0;
   height: 0;
-  margin: 0px 0px 0px 0px;
+  margin: 0;
   background: #00B0B2;
   border-radius: 50%;
   transition: 0.3s ease;
@@ -192,28 +192,9 @@ nav {
 
 /* News */
 
-.section--news {
-  margin-top: .5em;
-}
-
 .section--news--heading {
   text-align: center;
   font-family: "Supersonic", sans-serif;
-}
-
-.news--heading--accent {
-  position: relative;
-}
-
-.news--heading--accent:before {
-  position: absolute;
-  content: "";
-  height: .4em;
-  width: 70%;
-  bottom: .2em;
-  right: 1.25em;
-  z-index: -1;
-  background: #00B0B2;
 }
 
 .news {
@@ -230,18 +211,7 @@ nav {
 
 .news--content {
   white-space: pre-wrap;
-  padding-left: 1em;
-  position: relative;
-}
-
-.news--content:after {
-  content: '';
-  height: 60%; 
-  width: 3px;  
-  position: absolute;
-  top: 0; 
-  left: 0;  
-  background-color: #00B0B2;
+  padding: 1em;
 }
 
 .news--date {
