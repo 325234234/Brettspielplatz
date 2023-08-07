@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import News from "./components/News"
 import Calendar from "./components/Calendar"
 import Reservation from "./components/Reservation"
@@ -8,7 +8,7 @@ import Layout from "./components/Layout"
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<News />} />
@@ -18,6 +18,6 @@ export default function App() {
             <Route path="spiele" element={<Gamelist />} />
           </Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
