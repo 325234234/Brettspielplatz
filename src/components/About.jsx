@@ -66,7 +66,8 @@ export default function About() {
       cursor: 'pointer',
       objectFit: 'cover',
       width: '100%',
-      height: '100%'
+      height: '100%',
+      backgrundColor: 'white'
     }
 
     return (<Item

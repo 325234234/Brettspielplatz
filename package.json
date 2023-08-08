@@ -10,9 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.14.3",
+    "email-js": "^2.0.2",
     "google-map-react": "^2.2.1",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",

@@ -312,6 +312,88 @@ nav {
   box-shadow: 0 0 5px rgba(128, 128, 128, 0.377);
 }
 
+/* Reservierungen */
+
+.section--reservation {
+  padding: 1em;
+  flex-grow: 1;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.section--reservation--title,
+.section--reservation > h2 {
+  text-align: center;
+  font-family: "Supersonic", sans-serif;
+}
+
+.section--reservation--form {
+  width: 80%;
+
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section--reservation--form > label {
+  font-family: "Supersonic", sans-serif;
+  font-size: 1.25rem;  
+}
+
+.section--reservation--input {
+  width: 100%;
+  margin-bottom: 1em;
+  padding: 1em;
+  outline-color:#00B0B2;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.fett
+ {
+  font-family: "Supersonic", sans-serif;
+}
+
+
+.section--reservation--input::placeholder,
+.section--reservation--textarea::placeholder {  
+  font-family: 'Roboto', sans-serif;
+}
+
+.section--reservation--textarea {
+  height: 150px;
+  width: 100%;
+  margin-bottom: 1em;
+  resize: none;
+  padding: .5em 1em;
+  border-radius: 5px;
+  font-size: 1rem;
+} 
+
+.section--reservation--button {
+  width: 150px;
+  background-color:#00B0B2;
+  color: white;
+  font-family: "Supersonic", sans-serif;
+  font-size: 1.25rem;
+  padding: .75em;
+  border-radius: 5px;
+  outline: none;
+  border-style: none;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+}
+
+.section--reservation--button:hover {
+  opacity: .9;
+}
+
 /* Footer */
 
 footer {
@@ -338,6 +420,20 @@ footer > div > p {
   text-align: center;
 }
 
+footer > div > a {
+  color: white;
+}
+
+footer > div > p > a:visited {
+  color: white;
+}
+
+.footer--contact {
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+}
+
 @media (max-width: 420px) {
   footer {
     flex-direction: column;
@@ -346,5 +442,9 @@ footer > div > p {
 
   footer > div {
     width: 90%;
+  }
+
+  .section--reservation--form {
+    width: 100%;
   }
 }
