@@ -1,3 +1,5 @@
+import "./navbar.css"
+
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
@@ -7,7 +9,8 @@ export default function Navbar() {
 
   //style the active link differently
   const activeStyle = {
-      color: "#2A4359"
+      color: "#2A4359",
+      textShadow: "none"      
   }
 
   // show/hide the nav menu

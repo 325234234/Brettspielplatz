@@ -1,19 +1,20 @@
+import "./about.css"
 import 'photoswipe/dist/photoswipe.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
 
-import hero from '../assets/hero.jpg'
-import laden1 from '../assets/laden1.jpg'
-import laden1_tb from '../assets/laden1_tb.jpg'
-import laden2 from '../assets/laden2.jpg'
-import laden2_tb from '../assets/laden2_tb.jpg'
-import laden3 from '../assets/laden3.jpg'
-import laden3_tb from '../assets/laden3_tb.jpg'
-import laden4 from '../assets/laden4.jpg'
-import laden4_tb from '../assets/laden4_tb.jpg'
-import laden5 from '../assets/laden5.jpg'
-import laden5_tb from '../assets/laden5_tb.jpg'
-import laden6 from '../assets/laden6.jpg'
-import laden6_tb from '../assets/laden6_tb.jpg'
+import hero from '../../assets/hero.jpg'
+import laden1 from '../../assets/laden1.jpg'
+import laden1_tb from '../../assets/laden1_tb.jpg'
+import laden2 from '../../assets/laden2.jpg'
+import laden2_tb from '../../assets/laden2_tb.jpg'
+import laden3 from '../../assets/laden3.jpg'
+import laden3_tb from '../../assets/laden3_tb.jpg'
+import laden4 from '../../assets/laden4.jpg'
+import laden4_tb from '../../assets/laden4_tb.jpg'
+import laden5 from '../../assets/laden5.jpg'
+import laden5_tb from '../../assets/laden5_tb.jpg'
+import laden6 from '../../assets/laden6.jpg'
+import laden6_tb from '../../assets/laden6_tb.jpg'
 
 export default function About() {
   const images = [

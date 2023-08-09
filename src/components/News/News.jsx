@@ -1,3 +1,5 @@
+import "./news.css"
+
 import { useState, useEffect } from "react"
 import BeatLoader from 'react-spinners/BeatLoader'
 
@@ -39,7 +41,13 @@ export default function News() {
           <div className="section--news--loader">
             <BeatLoader color={"#00B0B2"}/>
           </div>
-          ) : newsElements}
+          ) : 
+          (
+            <div className="section--news--newsitems">
+              {newsElements}
+            </div>
+            )
+          }
       </section>
     )
 }

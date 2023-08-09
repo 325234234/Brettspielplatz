@@ -1,0 +1,59 @@
+/* Spieleliste */
+
+.section--games {
+  padding: 1em;
+
+  flex-grow: 1;
+  
+  display: flex;
+  flex-direction: column;
+} 
+
+.section--games--title {
+  font-size: 2rem;
+  text-align: center;
+  font-family: "Supersonic", sans-serif;
+}
+
+.section--games--content {
+  padding: 1em;
+
+  background-color: #FFFFF9;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.section--games--loader {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.section--games--list {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section--games--game {
+  text-align: center;
+  padding: 1em;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(128, 128, 128, 0.377);
+}
+
+.section--games--game--title {
+  font-family: "Supersonic", sans-serif;
+}
