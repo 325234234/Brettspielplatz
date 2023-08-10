@@ -85,19 +85,21 @@ export default function About() {
   })
 
   return (
-    <section className="section--about">
-      <h1 className="section--about--title">Über uns</h1>
-      <img src={hero} className="section--about--hero"/>
-      <h2 className="section--about--heading">Willkommen in Berlins größtem Brettspielecafé!</h2>
-      <p>Im Herzen Moabits bieten wir euch bei Kaffee, Waffel und Süßgetränk über 200 Spiele zum ausgiebigen Spielen und Genießen an.
-        Unser Konzept: Bezahlt nur die Zeit, die ihr im Laden verbringt. Ob dann ein oder einhundert Spiele gespielt werden - ganz egal. Spielt so viel, wie ihr wollt. Also schaut mal vorbei.
-        Wir haben das passende Spiel für jede Gelegenheit :)
-      </p>
-      <Gallery>
-        <div className="section--about--gallery">
-          {imageElements}
-        </div>
-      </Gallery>
+    <section className="section">
+      <h1 className="title supersonic">Über uns</h1>
+      <div className="tile shadow">
+        <img src={hero} className="section--about--hero"/>
+        <h2 className="section--about--heading supersonic">Willkommen in Berlins größtem Brettspielecafé!</h2>
+        <p>Im Herzen Moabits bieten wir euch bei Kaffee, Waffel und Süßgetränk über 200 Spiele zum ausgiebigen Spielen und Genießen an.
+          Unser Konzept: Bezahlt nur die Zeit, die ihr im Laden verbringt. Ob dann ein oder einhundert Spiele gespielt werden - ganz egal. Spielt so viel, wie ihr wollt. Also schaut mal vorbei.
+          Wir haben das passende Spiel für jede Gelegenheit :)
+        </p>
+        <Gallery>
+          <div className="section--about--gallery">
+            {imageElements}
+          </div>
+        </Gallery>
+      </div>
     </section>
   )
 }

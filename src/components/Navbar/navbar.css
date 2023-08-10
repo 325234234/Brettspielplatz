@@ -20,7 +20,6 @@ nav {
 
 .logo--text {
   font-size: 1.5rem;
-  font-family: "Supersonic", sans-serif;
 }
 
 .logo--accent {
@@ -79,13 +78,6 @@ nav {
   margin-top: 3em;
   text-align: end;
   
-  font-family: "Supersonic", sans-serif;
-  
-  text-shadow:
-		-1px -1px 0 #1c1c1c,
-		1px -1px 0 #1c1c1c,
-		-1px 1px 0 #1c1c1c,
-		1px 1px 0 #1c1c1c;
   transition: 0.3s ease;
   display: none;
 }

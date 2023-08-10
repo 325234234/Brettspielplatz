@@ -37,3 +37,54 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+/* General styling */
+
+.supersonic {
+  font-family: 'Supersonic', sans-serif;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.outline {  
+  text-shadow:
+		-1px -1px 0 #1c1c1c,
+		1px -1px 0 #1c1c1c,
+		-1px 1px 0 #1c1c1c,
+		1px 1px 0 #1c1c1c;
+}
+
+.shadow {  
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+
+.tile {
+  padding: 1em;
+
+  background-color: #f9f9ff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+
+.section {
+  padding: 1em;
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

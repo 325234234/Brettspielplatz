@@ -31,23 +31,23 @@ export default function Navbar() {
 
   return (
     <nav>
-      <h1 className="logo--text"><span className="logo--accent">Brettspielplatz</span></h1>
+      <h1 className="logo--text supersonic"><span className="logo--accent">Brettspielplatz</span></h1>
       <div id="burger">
         <div id="burger--bars" onClick={burgerMenuClick}>
           <div id="burger--bar1" className="burger--bar"></div>
           <div id="burger--bar2" className="burger--bar"></div>
           <div id="burger--bar3" className="burger--bar"></div>
         </div>
-        <div className="burger--links" id="burger--links">
+        <div className="burger--links supersonic outline" id="burger--links">
           <ul>
             <li><NavLink to="/" onClick={burgerMenuClick} style={({ isActive }) => 
                 isActive ? activeStyle : null}>Neuigkeiten</NavLink></li>
-            <li><NavLink to="/kalender" onClick={burgerMenuClick} style={({ isActive }) => 
-                isActive ? activeStyle : null}>Kalender</NavLink></li>
             <li><NavLink to="/reservierungen" onClick={burgerMenuClick} style={({ isActive }) => 
                 isActive ? activeStyle : null}>Reservierungen</NavLink></li>
             <li><NavLink to="/about" onClick={burgerMenuClick} style={({ isActive }) => 
                 isActive ? activeStyle : null}>Über uns</NavLink></li>
+            <li><NavLink to="/events" onClick={burgerMenuClick} style={({ isActive }) => 
+                isActive ? activeStyle : null}>Events</NavLink></li>
             <li><NavLink to="/spiele" onClick={burgerMenuClick} style={({ isActive }) => 
                 isActive ? activeStyle : null}>Spiele</NavLink></li>
           </ul>

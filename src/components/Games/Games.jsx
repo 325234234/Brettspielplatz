@@ -68,9 +68,9 @@ export default function Games() {
   )
 
   return (
-    <section className="section--games">
-      <h1 className="section--games--title">Spieleliste</h1>
-      <div className="section--games--content">
+    <section className="section">
+      <h1 className="title supersonic">Spieleliste</h1>
+      <div className="tile shadow">
         <p>Hier findet ihr eine Liste aller unserer Spiele. Wer auf Schmerzen steht, kann sich von Hand durchscrollen, alle anderen geben
           einfach den gesuchten Titel ein. Wenn wir ihn haben, wird er euch direkt vorgeschlagen. Wählt ihr ihn aus, bekommt ihr auch noch
           ein paar Informationen zum Spiel angezeigt. Wird euch der gesuchte Titel nicht vorgeschlagen, haben wir ihn leider noch nicht

@@ -1,6 +1,6 @@
 import { HashRouter, Routes, Route } from "react-router-dom"
 import News from "./components/News/News"
-import Calendar from "./components/Calendar/Calendar"
+import Events from "./components/Events/Events"
 import Reservations from "./components/Reservations/Reservations"
 import About from "./components/About/About"
 import Games from "./components/Games/Games"
@@ -13,7 +13,7 @@ export default function App() {
       <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<News />} />
-            <Route path="kalender" element={<Calendar />} />
+            <Route path="events" element={<Events />} />
             <Route path="reservierungen" element={<Reservations />} />
             <Route path="about" element={<About />} />
             <Route path="spiele" element={<Games />} />

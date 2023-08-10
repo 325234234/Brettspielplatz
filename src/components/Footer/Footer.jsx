@@ -4,8 +4,8 @@ export default function Footer() {
 
   return (
     <footer>
-      <div className="footer--contact">
-        <h2>Kontakt</h2>
+      <div>
+        <h2 className="supersonic outline">Kontakt</h2>
         <p>Brettspielplatz</p>
         <p>Waldstraße 50 <a href="https://goo.gl/maps/SvxL2QFk8cRq3BHn6">(Maps)</a></p>
         <p>10551 Berlin</p>
@@ -13,7 +13,7 @@ export default function Footer() {
         <a href="mailto:kontakt@brettspielplatz.de">kontakt@brettspielplatz.de</a>
       </div>
       <div>
-        <h2>Öffnungszeiten</h2>
+        <h2 className="supersonic outline">Öffnungszeiten</h2>
         <p>Wochentags: 16 - 24 Uhr</p>
         <p>Wochenende: 14 - 24 Uhr</p>
         <br />

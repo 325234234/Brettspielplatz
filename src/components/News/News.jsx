@@ -1,5 +1,4 @@
 import "./news.css"
-
 import { useState, useEffect } from "react"
 import BeatLoader from 'react-spinners/BeatLoader'
 
@@ -26,7 +25,7 @@ export default function News() {
 
     const newsElements = news.map(news => {
       return (
-        <div className="news" key={news[0]}>
+        <div className="news shadow" key={news[0]}>
           <img src={news[1]} className="news--image" />
           <p className="news--date">{news[0]}</p>
           <p className="news--content">{(news[2])}</p>
@@ -35,8 +34,8 @@ export default function News() {
     })
 
     return (
-      <section className="section--news">
-        <h1 className="section--news--title">Neuigkeiten</h1>
+      <section className="section">
+        <h1 className="title supersonic">Neuigkeiten</h1>
         {isLoading ? (
           <div className="section--news--loader">
             <BeatLoader color={"#00B0B2"}/>

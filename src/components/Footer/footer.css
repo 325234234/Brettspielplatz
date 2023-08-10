@@ -2,45 +2,23 @@
 
 footer {
   width: 100%;
-  height: fit-content;
+  height: fit-content;  
   padding: 1em;
-
-  display: flex;
   
-  color: white;
+  display: flex;
+
+    color: white;
   background-color: #00B0B2;
+  text-align: center;
 }
 
 footer > div {
   width: 50%;
 }
 
-footer > div > h2 {  
-  font-family: "Supersonic", sans-serif;
-  text-align: center;
-  text-shadow:
-		-1px -1px 0 #1c1c1c,
-		1px -1px 0 #1c1c1c,
-		-1px 1px 0 #1c1c1c,
-		1px 1px 0 #1c1c1c;
-}
-
-footer > div > p {
-  text-align: center;
-}
-
-footer > div > a {
-  color: white;
-}
-
+footer > div > a,
 footer > div > p > a:visited {
   color: white;
-}
-
-.footer--contact {
-  display: flex;
-  flex-direction:  column;
-  align-items: center;
 }
 
 @media (max-width: 420px) {

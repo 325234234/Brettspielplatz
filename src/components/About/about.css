@@ -1,20 +1,5 @@
 /* About */
 
-.section--about {
-  padding: 1em;
-  flex-grow: 1;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.section--about--title {
-  font-size: 2rem;
-  text-align: center;
-  font-family: "Supersonic", sans-serif;
-}
-
 .section--about--heading {
   text-align: center;
   margin: .5em 0;
