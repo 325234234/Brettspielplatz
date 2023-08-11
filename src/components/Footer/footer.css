@@ -3,11 +3,10 @@
 footer {
   width: 100%;
   height: fit-content;  
-  padding: 1em;
   
   display: flex;
 
-    color: white;
+  color: white;
   background-color: #00B0B2;
   text-align: center;
 }

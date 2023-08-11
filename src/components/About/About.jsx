@@ -1,7 +1,6 @@
 import "./about.css"
 import 'photoswipe/dist/photoswipe.css'
 import { Gallery, Item } from 'react-photoswipe-gallery'
-
 import hero from '../../assets/hero.jpg'
 import laden1 from '../../assets/laden1.jpg'
 import laden1_tb from '../../assets/laden1_tb.jpg'
@@ -85,7 +84,7 @@ export default function About() {
   })
 
   return (
-    <section className="section">
+    <section className="content maxWidth1200">
       <h1 className="title supersonic">Über uns</h1>
       <div className="tile shadow">
         <img src={hero} className="section--about--hero"/>

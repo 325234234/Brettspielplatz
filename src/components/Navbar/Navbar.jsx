@@ -1,11 +1,9 @@
 import "./navbar.css"
-
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
 export default function Navbar() {
   const [isOpen, setOpen] = useState(false)
-
 
   //style the active link differently
   const activeStyle = {
@@ -18,7 +16,8 @@ export default function Navbar() {
     document.getElementById("burger--bars").classList.toggle("change")
     document.getElementById("burger--background").classList.toggle("change-bg")
 
-    // the links should vanish immediately if the menu is to be closed, but appear with a small delay if the menu is to be opened
+    // the links should vanish immediately if the menu is to be closed,
+    // but appear with a small delay if the menu is to be opened to accomodate for the transition time on opening
     if(isOpen) {
       document.getElementById("burger--links").classList.toggle("change")
     } else {      
@@ -30,7 +29,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav>
+    <nav className="maxWidth1200">
       <h1 className="logo--text supersonic"><span className="logo--accent">Brettspielplatz</span></h1>
       <div id="burger">
         <div id="burger--bars" onClick={burgerMenuClick}>

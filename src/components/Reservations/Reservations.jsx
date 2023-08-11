@@ -21,7 +21,7 @@ export default function Reservations() {
   }
  
   return (    
-    <section className="section">
+    <section className="content maxWidth1200">
       <h1 className="title supersonic">Reservierungen</h1>
       <div className="tile shadow">
         <p>Hier könnt ihr Reservierungen anfragen. Gebt neben eurem <span className="supersonic">Namen</span> und eurer <span className="supersonic">Email</span> auch den gewünschten <span className="supersonic">Termin</span> (Tag und Zeit)

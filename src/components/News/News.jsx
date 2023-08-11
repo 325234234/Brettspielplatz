@@ -34,7 +34,7 @@ export default function News() {
     })
 
     return (
-      <section className="section">
+      <section className="content maxWidth1200">
         <h1 className="title supersonic">Neuigkeiten</h1>
         {isLoading ? (
           <div className="section--news--loader">

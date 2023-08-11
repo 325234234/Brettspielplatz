@@ -9,12 +9,11 @@ nav {
   top: 0;
   left: 0;
 
-  padding: 1em;
-
   background: white;
   box-shadow: 0 4px 5px -5px gray;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -136,4 +135,43 @@ nav {
   width: 475px;
   height: 425px;
   transform: translate(50%, -20%);
+}
+
+@media (min-width: 1000px) {   
+  /* integrate the burger menu's container back into the normal flow of elements */
+  #burger {
+    position: static; 
+  }
+  
+  /* hide the burger bars/menu */
+  #burger--bars {
+    display: none;
+  }
+
+  /* permanently show the menu links */
+  .burger--links {
+    margin: 0;
+    display: flex;
+  }
+
+  /* remove the lateral padding that was required for accessibility on mobile devices */
+  .burger--links > ul {
+    padding: 0;
+  }
+
+  /* change from vertical back to horizontal layout and space them with a 1em gap */
+  .burger--links > ul > li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+  /* give the links a hover effect which didn't make sense on mobile devices */
+  .burger--links > ul > li :hover {
+    color: #00B0B2;
+  }
+
+  /* don't show the burger menu background on click anymore */
+  .change-bg {
+    display: none;
+  }
 }

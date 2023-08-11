@@ -3,7 +3,7 @@ import "./footer.css"
 export default function Footer() {
 
   return (
-    <footer>
+    <footer className="maxWidth1200">
       <div>
         <h2 className="supersonic outline">Kontakt</h2>
         <p>Brettspielplatz</p>
