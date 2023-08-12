@@ -28,7 +28,7 @@ export default function News() {
         <div className="news shadow" key={news[0]}>
           <img src={news[1]} className="news--image" />
           <p className="news--date">{news[0]}</p>
-          <p className="news--content">{(news[2])}</p>
+          <p className="news--content justified">{(news[2])}</p>
         </div>
       )
     })

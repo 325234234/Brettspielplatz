@@ -89,7 +89,7 @@ export default function About() {
       <div className="tile shadow">
         <img src={hero} className="section--about--hero"/>
         <h2 className="section--about--heading supersonic">Willkommen in Berlins größtem Brettspielecafé!</h2>
-        <p>Im Herzen Moabits bieten wir euch bei Kaffee, Waffel und Süßgetränk über 200 Spiele zum ausgiebigen Spielen und Genießen an.
+        <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und Süßgetränk über 200 Spiele zum ausgiebigen Spielen und Genießen an.
           Unser Konzept: Bezahlt nur die Zeit, die ihr im Laden verbringt. Ob dann ein oder einhundert Spiele gespielt werden - ganz egal. Spielt so viel, wie ihr wollt. Also schaut mal vorbei.
           Wir haben das passende Spiel für jede Gelegenheit :)
         </p>

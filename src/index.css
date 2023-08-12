@@ -34,6 +34,10 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.justified {  
+  text-align: justify;
+}
+
 /* Layout */
 
 #root {

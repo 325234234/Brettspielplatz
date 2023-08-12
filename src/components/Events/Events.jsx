@@ -6,7 +6,7 @@ export default function Events() {
     <section className="content maxWidth1200">
       <h1 className="title supersonic">Events</h1>
       <div className="tile shadow">
-        <p>Hier findet ihr eine Auflistung unserer regelmäßig stattfindenden Events. Bei allen sind Neulinge gerne willkommen. 
+        <p className="justified">Hier findet ihr eine Auflistung unserer regelmäßig stattfindenden Events. Bei allen sind Neulinge gerne willkommen. 
         </p>
         <img src={events} className="section--events--calendar"/>
       </div>

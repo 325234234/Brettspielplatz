@@ -168,6 +168,7 @@ nav {
   /* give the links a hover effect which didn't make sense on mobile devices */
   .burger--links > ul > li :hover {
     color: #00B0B2;
+    text-shadow: none;
   }
 
   /* don't show the burger menu background on click anymore */
