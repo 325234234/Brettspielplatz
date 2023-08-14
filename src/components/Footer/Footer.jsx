@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="maxWidth1200">
       <div>
         <h2 className="supersonic outline">Kontakt</h2>
-        <p>Brettspielplatz</p>
+        <p>Brettspielplatz - Das Spielecafé</p>
         <p>Waldstraße 50 <a href="https://goo.gl/maps/SvxL2QFk8cRq3BHn6">(Maps)</a></p>
         <p>10551 Berlin</p>
         <p>030 / 55522236</p>

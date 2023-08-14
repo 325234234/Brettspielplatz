@@ -1,4 +1,5 @@
 import "./navbar.css"
+import animationImage from "../../assets/favicon/android-chrome-192x192.png"
 import { useState } from "react"
 import { NavLink } from "react-router-dom"
 
@@ -31,6 +32,9 @@ export default function Navbar() {
   return (
     <nav className="maxWidth1200">
       <h1 className="logo--text supersonic"><span className="logo--accent">Brettspielplatz</span></h1>
+      <div className="navbar--animation-container">
+        <img src={animationImage} className="navbar--animation" />
+      </div>
       <div id="burger">
         <div id="burger--bars" onClick={burgerMenuClick}>
           <div id="burger--bar1" className="burger--bar"></div>

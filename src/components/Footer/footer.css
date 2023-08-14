@@ -7,7 +7,8 @@ footer {
   display: flex;
 
   color: white;
-  background-color: #00B0B2;
+  background: url("../../assets/footer.png") center center no-repeat, #00B0B2;
+  background-size: cover;
   text-align: center;
 }
 

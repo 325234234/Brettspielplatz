@@ -13,7 +13,6 @@ nav {
   box-shadow: 0 4px 5px -5px gray;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -39,6 +38,113 @@ nav {
 
 .logo--accent:hover::before {
   right: 2.75em;
+}
+
+.navbar--animation-container {
+  flex-grow: 1;
+  height: 100%;
+  margin-right: 100px;
+  padding: 0 1em 1em 1em;
+
+  position: relative;
+}
+
+.navbar--animation {
+  position:absolute;
+  height: 300%;
+  top: -15px;
+
+  animation: 10s infinite animation;
+  --rotation-up-forward: -35deg;
+  --rotation-down-forward: 15deg; 
+  --rotation-up-backward: 35deg;
+  --rotation-down-backward: -15deg; 
+}
+
+@keyframes animation {
+  0%   {
+    left: 0;
+  }
+  5%   {
+    left: 10%;
+    transform: rotate(var(--rotation-up-forward));
+  }
+  10%   {
+    left: 20%;
+    transform: rotate(var(--rotation-down-forward));
+  }
+  15%   {
+    left: 30%;
+    transform: rotate(var(--rotation-up-forward));
+  }
+  20%   {
+    left: 40%;
+    transform: rotate(var(--rotation-down-forward));
+  }
+  25%  { 
+    left: 50%;
+    transform: rotate(var(--rotation-up-forward));
+  }
+  30%  { 
+    left: 60%;
+    transform: rotate(var(--rotation-down-forward));
+  }
+  35%  { 
+    left: 70%;
+    transform: rotate(var(--rotation-up-forward));
+  }
+  40%  { 
+    left: 80%;
+    transform: rotate(var(--rotation-down-forward));
+  }
+  45%  { 
+    left: 90%;
+    transform: rotate(var(--rotation-up-forward));
+  }
+  50%  {
+    left: 100%;
+    transform: scaleX(-1);
+  }
+  55%  {
+    left: 90%;
+    transform: rotate(var(--rotation-up-backward)) scaleX(-1);
+  }
+  60%  {
+    left: 80%;
+    transform: rotate(var(--rotation-down-backward)) scaleX(-1);
+  }
+  65% {
+    left: 70%;
+    transform: rotate(var(--rotation-up-backward)) scaleX(-1);
+  }
+  70% {
+    left: 60%;
+    transform: rotate(var(--rotation-down-backward)) scaleX(-1);
+  }
+  75% {
+    left: 50%;
+    transform: rotate(var(--rotation-up-backward)) scaleX(-1);
+  }
+  80% {
+    left: 40%;
+    transform: rotate(var(--rotation-down-backward)) scaleX(-1);
+  }
+  85% {
+    left: 30%;
+    transform: rotate(var(--rotation-up-backward)) scaleX(-1);
+  }
+  90% {
+    left: 20%;
+    transform: rotate(var(--rotation-down-backward)) scaleX(-1);
+  }
+  95% {
+    left: 10%;
+    transform: rotate(var(--rotation-up-backward)) scaleX(-1);
+  }
+  100% {
+    left: 0;
+  }
+  
 }
 
 #burger {
@@ -174,5 +280,9 @@ nav {
   /* don't show the burger menu background on click anymore */
   .change-bg {
     display: none;
+  }
+
+  .navbar--animation-container {
+    margin-right: 25px;
   }
 }
