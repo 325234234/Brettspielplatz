@@ -30,31 +30,54 @@ export default function Reservations() {
     <section className="content maxWidth1200">
       <h1 className="title supersonic">Reservierungen</h1>
       <div className="tile shadow">
-        <p className="justified">Hier könnt ihr Reservierungen anfragen. Gebt hierfür einfach euren <span className="supersonic">Namen</span>,
-        eure <span className="supersonic">Email</span>, den gewünschten <span className="supersonic">Termin</span> (Tag, Uhrzeit und Dauer) sowie die
-        <span className="supersonic">Anzahl an Personen</span> an. Wir melden uns dann bei euch. Mitunter kann das aber ein oder zwei Tage dauern.</p>
+        <p className="justified">
+          Hier könnt ihr Reservierungen anfragen. Gebt hierfür einfach euren <span className="supersonic">Namen</span>,
+          eure <span className="supersonic">Email</span>, eine <span className="supersonic">Telefonnummer</span>,
+          den gewünschten <span className="supersonic">Tag</span> (mindestens zwei Tage in der Zukunft),
+          die gewünschte <span className="supersonic">Uhrzeit</span> sowie die geplante <span className="supersonic">Anzahl an Personen</span> an.
+          Solltet ihr für mehr als zwölf Personen reservieren wollen, dann schreibt uns bitte noch eine kurze Nachricht in der ihr die
+          genaue Personenzahl und eventuelle zusätzliche Vorhaben mitteilt. Wir melden uns innerhalb ein oder zwei Tage bei euch.
+        </p>
         {requestSend ? <h2 className="title supersonic">Anfrage verschickt!</h2> :        
           <form className="section--reservation--form" ref={form} onSubmit={sendEmail}>
-          <label htmlFor="name">Name</label>
-          <input className="section--reservation--input" type="text" name="name" id="name" placeholder="Peter Lustig" required />
-          <label htmlFor="email">Email</label>
-          <input className="section--reservation--input" type="email" name="email" id="email" placeholder="sexypeter6969@hotmail.com" required />
-          <label htmlFor="date">Tag</label>
-          <input
-            type="date"
-            name="date"
-            id="date"
-            defaultValue={todaysDate}
-            min={twoDaysAhead.toISOString().split("T")[0]}
-            max={sixtyDaysAhead.toISOString().split("T")[0]}
-            required
-          />
-          <label htmlFor="time">Uhrzeit</label>
-          <input type="time" name="time" id="time" defaultValue="14:00" min="14:00" max="23:00" step="900" required />
-          <label htmlFor="message">Anfrage</label>
-          <textarea className="section--reservation--textarea" name="message" id="message" placeholder="Sonstige Informationen :)" required />
-          <input className="section--reservation--button supersonic outline" type="submit" value="Abschicken" />
-        </form>}
+            <label htmlFor="name">Name</label>
+            <input className="section--reservation--input" type="text" name="name" id="name" placeholder="Peter Lustig" required />
+            <label htmlFor="email">Email</label>
+            <input className="section--reservation--input" type="email" name="email" id="email" placeholder="sexypeter69@hotmail.com" required />
+            <label htmlFor="telefon">Telefon</label>
+            <input className="section--reservation--input" type="text" name="telefon" id="telefon" placeholder="0123 4567890" required />
+            <label htmlFor="date">Tag</label>
+            <input
+              type="date"
+              name="date"
+              id="date"
+              defaultValue={todaysDate}
+              min={twoDaysAhead.toISOString().split("T")[0]}
+              max={sixtyDaysAhead.toISOString().split("T")[0]}
+              required
+            />
+            <label htmlFor="time">Uhrzeit</label>
+            <input type="time" name="time" id="time" defaultValue="14:00" min="14:00" max="23:00" step="900" required />
+            <label htmlFor="personen">Personen</label>
+            <select name="personen" required>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="12+">12+</option>
+            </select>
+            <label htmlFor="message">Sonstiges</label>
+            <textarea className="section--reservation--textarea" name="message" id="message" placeholder="Sonstige Informationen :)" />
+
+            <input className="section--reservation--button supersonic outline" type="submit" value="Abschicken" />
+          </form>}
       </div>
     </section>
   )

@@ -1,5 +1,5 @@
 import "./footer.css"
-import image from "../../assets/footer2.jpg"
+import image from "../../assets/footer.jpg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMapLocationDot } from '@fortawesome/free-solid-svg-icons'
 

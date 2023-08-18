@@ -2,7 +2,6 @@
 
 .section--reservation--form {
   width: 80%;
-
   margin: 0;
 
   display: flex;
@@ -19,7 +18,6 @@
   width: 100%;
   margin-bottom: 1em;
   padding: 1em;
-  outline-color:#00B0B2;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -30,7 +28,6 @@
 }
 
 .section--reservation--textarea {
-  height: 150px;
   width: 100%;
   margin-bottom: 1em;
   resize: none;
