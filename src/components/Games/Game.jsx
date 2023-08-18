@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types'
 
-export default function Game({id, name, playersMin, playersMax, lengthMin, lengthMax, complexity, language, childGame}) {
+export default function Game({id, name, playersMin, playersMax, lengthMin, lengthMax, complexity, bggId, language, childGame, onClick}) {
 
   return (
-    <div className="section--games--game" key={id}>
+    <div className="section--games--game" key={id} onClick={() => onClick(bggId)}>
       <h1 className="supersonic">{name}</h1>
       <p>{`👪 Spieler: ${playersMin || "k.A."} - ${playersMax || "k.A."}`}</p>
       <p>{`⏳ Dauer: ${lengthMin || "k.A."} - ${lengthMax || "k.A."} min.`}</p>
@@ -22,6 +22,8 @@ Game.propTypes = {
   lengthMin: PropTypes.string.isRequired,
   lengthMax: PropTypes.string.isRequired,
   complexity: PropTypes.string.isRequired,
+  bggId: PropTypes.string.isRequired,
   language: PropTypes.string.isRequired,
   childGame: PropTypes.string.isRequired,
+  onClick: PropTypes.string.isRequired,
 }

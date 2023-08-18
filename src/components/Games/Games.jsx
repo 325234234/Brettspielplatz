@@ -32,6 +32,13 @@ export default function Games() {
     fetchGames()
   }, [])
 
+  // opens a new tab to a game's BoardGameGeek's page if user clicks the game's div (or does nothing if it's not a valid game)
+  function openBGG(id) {
+    if(id) {
+      window.open(`https://boardgamegeek.com/boardgame/${id}/`, "_blank", "noreferrer");
+    }
+  }
+
   // structure of game object in games
   // 0: "Spiel"
   // 1: "Spieler Min"
@@ -62,8 +69,10 @@ export default function Games() {
       lengthMin={game[4]} 
       lengthMax={game[5]} 
       complexity={game[6]} 
+      bggId={game[7]}
       language={game[8]} 
-      childGame={game[9]} 
+      childGame={game[9]}
+      onClick={openBGG}
     />
   )
 
