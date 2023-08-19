@@ -22,8 +22,8 @@ export default function Reservations() {
 
   const todaysDate = new Date()
   const twoDaysAhead = new Date()
-  const sixtyDaysAhead = new Date()
   twoDaysAhead.setDate(todaysDate.getDate() + 2)
+  const sixtyDaysAhead = new Date()
   sixtyDaysAhead.setDate(todaysDate.getDate() + 60)
   
   return (    
@@ -36,7 +36,7 @@ export default function Reservations() {
           den gewünschten <span className="supersonic">Tag</span> (mindestens zwei Tage in der Zukunft),
           die gewünschte <span className="supersonic">Uhrzeit</span> sowie die geplante <span className="supersonic">Anzahl an Personen</span> an.
           Solltet ihr für mehr als zwölf Personen reservieren wollen, dann schreibt uns bitte noch eine kurze Nachricht in der ihr die
-          genaue Personenzahl und eventuelle zusätzliche Vorhaben mitteilt. Wir melden uns innerhalb ein oder zwei Tage bei euch.
+          genaue Personenzahl und eventuelle zusätzliche Vorhaben mitteilt. Wir melden uns innerhalb von ein oder zwei Tagen bei euch.
         </p>
         {requestSend ? <h2 className="title supersonic">Anfrage verschickt!</h2> :        
           <form className="section--reservation--form" ref={form} onSubmit={sendEmail}>

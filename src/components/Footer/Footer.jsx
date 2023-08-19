@@ -15,11 +15,11 @@ export default function Footer() {
         <a href="https://goo.gl/maps/SvxL2QFk8cRq3BHn6" className="footer--address--link">            
           <div className="footer--address">
             <div>
-              <FontAwesomeIcon icon={faMapLocationDot} style={{color: "#ffffff", fontSize: "2rem"}} />
-            </div>
-            <div>
               <p>Waldstraße 50 </p>
-              <p>10551 Berlin</p>
+              <p style={{textAlign: "right"}}>10551 Berlin</p>
+            </div>            
+            <div>
+              <FontAwesomeIcon icon={faMapLocationDot} style={{color: "#ffffff", fontSize: "2rem"}} />
             </div>
           </div>
         </a>
