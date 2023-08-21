@@ -80,7 +80,7 @@ export default function Reservations() {
             className="section--reservation--input"
             value={formData.email}
             onChange={handleChange}
-            placeholder="sexypeter69@hotmail.com"
+            placeholder="peter@lustig.de"
             required />
 
           <label htmlFor="telephone">Telefon</label>
@@ -138,8 +138,6 @@ export default function Reservations() {
                 value={formData.people}
                 onChange={handleChange}
                 required>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
                   <option value="4">4</option>
                   <option value="5">5</option>
                   <option value="6">6</option>
