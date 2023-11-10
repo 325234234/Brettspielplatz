@@ -105,7 +105,6 @@ export default function Reservations() {
                 className="section--reservation--date section--reservation--input"
                 value={formData.date}
                 onChange={handleChange}
-                defaultValue={todaysDate.toString()}
                 min={twoDaysAhead.toISOString().split("T")[0]}
                 max={sixtyDaysAhead.toISOString().split("T")[0]}
                 required
@@ -121,7 +120,6 @@ export default function Reservations() {
                 className="section--reservation--time section--reservation--input"
                 value={formData.time}
                 onChange={handleChange}
-                defaultValue= "14:00"
                 min="10:00"
                 max="23:00"
                 step="900"
