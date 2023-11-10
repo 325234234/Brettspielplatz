@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types'
-
 export default function Game({id, name, playersMin, playersMax, lengthMin, lengthMax, complexity, bggId, language, childGame, onClick}) {
 
   return (
@@ -12,18 +10,4 @@ export default function Game({id, name, playersMin, playersMax, lengthMin, lengt
       {childGame ? <p>{`👶 Kinderspiel!`}</p> : ""}
     </div>
   )
-}
-
-Game.propTypes = {
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  playersMin: PropTypes.string.isRequired,
-  playersMax: PropTypes.string.isRequired,
-  lengthMin: PropTypes.string.isRequired,
-  lengthMax: PropTypes.string.isRequired,
-  complexity: PropTypes.string.isRequired,
-  bggId: PropTypes.string.isRequired,
-  language: PropTypes.string.isRequired,
-  childGame: PropTypes.string.isRequired,
-  onClick: PropTypes.string.isRequired,
 }
