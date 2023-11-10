@@ -51,8 +51,8 @@ export default function Events() {
           <Item
               original={clocktower}
               thumbnail={clocktower}
-              width={1300}
-              height={900}
+              width={1920}
+              height={950}
               key={1}
             >
               {({ ref, open }) => (

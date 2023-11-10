@@ -93,7 +93,7 @@ export default function About() {
           Unser Konzept: Bezahlt nur die Zeit, die ihr im Laden verbringt. Ob dann ein oder einhundert Spiele gespielt werden - ganz egal. Spielt so viel, wie ihr wollt. Also schaut mal vorbei.
           Wir haben das passende Spiel für jede Gelegenheit :)
         </p>
-        <p className="justified">Für <b>2€ pro Person und Stunde</b> (am Wochenende 3€/Person & Stunde) könnt ihr bei uns jedes unserer Spiele spielen.
+        <p className="justified">Für <b>2€ pro Person und Stunde</b> (Freitags bis Sonntags und an Feiertagen 3€/Person & Stunde) könnt ihr bei uns jedes unserer Spiele spielen.
           Und das Beste: ihr zahlt <b>maximal 10€</b> (am Wochenende 15€) für den Aufenthalt - <b>egal, wie lange ihr bleibt</b>!
           Darüber hinaus dürft ihr gerne eure eigenen Speisen und Getränke mitbringen, oder euch direkt zu uns liefern lassen. Wir haben aber auch eine Auswahl an heißen und kalten Getränken im Angebot, sowie ein paar süße und herzhafte Snacks.
           Es gibt bei uns außerdem gratis Internet und eine Reihe von Beamern, Lautsprechern und Konsolen, die auf Nachfrage gerne während eueres Aufenthaltes genutzt werden können.
