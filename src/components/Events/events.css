@@ -3,3 +3,7 @@
 .section--events--calendar {
   width: 100%;
 }
+
+.title:not(:first-child) {
+  margin-top: 1rem;
+}

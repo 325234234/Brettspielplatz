@@ -89,9 +89,14 @@ export default function About() {
       <div className="tile shadow">
         <img src={hero} className="section--about--hero"/>
         <h2 className="section--about--heading supersonic">Willkommen in Berlins größtem Brettspielecafé!</h2>
-        <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und Süßgetränk über 300 Spiele zum ausgiebigen Spielen und Genießen an.
+        <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und Süßgetränk über 350 Spiele zum ausgiebigen Spielen und Genießen an.
           Unser Konzept: Bezahlt nur die Zeit, die ihr im Laden verbringt. Ob dann ein oder einhundert Spiele gespielt werden - ganz egal. Spielt so viel, wie ihr wollt. Also schaut mal vorbei.
           Wir haben das passende Spiel für jede Gelegenheit :)
+        </p>
+        <p className="justified">Für <b>2€ pro Person und Stunde</b> (Freitags bis Sonntags und an Feiertagen 3€/Person & Stunde) könnt ihr bei uns jedes unserer Spiele spielen.
+          Und das Beste: ihr zahlt <b>maximal 10€ bzw. 15€</b> für den Aufenthalt - <b>egal, wie lange ihr bleibt</b>!
+          Darüber hinaus dürft ihr gerne eure eigenen Speisen und Getränke mitbringen, oder euch direkt zu uns liefern lassen. Wir haben aber auch eine Auswahl an heißen und kalten Getränken im Angebot, sowie ein paar süße und herzhafte Snacks.
+          Es gibt bei uns außerdem gratis Internet und eine Reihe von Beamern, Lautsprechern und Konsolen, die auf Nachfrage gerne während eueres Aufenthaltes genutzt werden können.
         </p>
         <Gallery>
           <div className="section--about--gallery">

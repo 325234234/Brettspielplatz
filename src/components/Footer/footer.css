@@ -2,15 +2,15 @@
 
 footer {
   width: 100%;
-  height: fit-content;  
-  
+  height: fit-content;
+
   display: flex;
 
   color: white;
   text-align: center;
 
   /* variant where the image opacity is set via CSS */
-  background: #00B0B2;  
+  background: #00B0B2;
   position: relative;
 
   /* variant where the image itself is created with opacity and just put over the background color */
@@ -27,7 +27,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  
+
   /* slowly fade in the background image from top to bottom */
   filter: grayscale(1);
   mask-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,.5));
@@ -37,6 +37,7 @@ footer {
 footer > div {
   z-index: 2;
   width: 50%;
+  margin: auto;
 }
 
 .footer--address {
@@ -44,7 +45,7 @@ footer > div {
   margin: 0 auto;
 
   display: flex;
-  gap: 1em;  
+  gap: 1em;
 }
 
 /* only the address link should have no underline */
