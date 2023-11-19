@@ -55,9 +55,9 @@ export default function Reservations() {
       <h1 className="title supersonic">Reservierungen</h1>
       <div className="tile shadow">
         <p className="justified">
-          Hier könnt ihr Reservierungen anfragen. Gebt hierfür einfach alle benötigten Informationen an.
-          Solltet ihr für <span className="supersonic">mehr als zwölf Personen</span> oder <span className="supersonic">außerhalb unserer regulären Öffnungszeiten</span> reservieren wollen,
-          dann schreibt uns bitte noch eine kurze Nachricht in der ihr uns die genaue Personenzahl
+          Hier könnt ihr Reservierungen anfragen (erst ab vier Personen!). Gebt hierfür einfach alle benötigten Informationen an.
+          Solltet ihr für <span className="supersonic">mehr als zwölf Personen</span> oder <span className="supersonic">außerhalb unserer regulären Öffnungszeiten</span> reservieren
+          wollen, dann schreibt uns bitte noch eine kurze Nachricht in der ihr uns die genaue Personenzahl
           und eure Pläne mitteilt. Wir melden uns innerhalb von ein oder zwei Tagen bei euch.
         </p>              
         <form className="section--reservation--form" ref={form} onSubmit={handleSubmit}>

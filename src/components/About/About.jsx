@@ -89,14 +89,18 @@ export default function About() {
       <div className="tile shadow">
         <img src={hero} className="section--about--hero"/>
         <h2 className="section--about--heading supersonic">Willkommen in Berlins größtem Brettspielecafé!</h2>
-        <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und Süßgetränk über 350 Spiele zum ausgiebigen Spielen und Genießen an.
-          Unser Konzept: Bezahlt nur die Zeit, die ihr im Laden verbringt. Ob dann ein oder einhundert Spiele gespielt werden - ganz egal. Spielt so viel, wie ihr wollt. Also schaut mal vorbei.
+        <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und
+          Süßgetränken <span className="supersonic">über 350 Spiele</span> zum ausgiebigen Spielen und Genießen an.
+          Unser Konzept: Bezahlt nur für die Zeit, die ihr im Laden verbringt. Von Montag bis Donnerstag sind
+          es <span className="supersonic">2 € pro Person und Stunde</span>, von Freitag bis
+          Sonntag und an Feiertagen <span className="supersonic">3 € pro Person und Stunde.</span> Bleibt ihr fünf Stunden oder länger,
+          zahlt ihr <span className="supersonic">10 € bzw. 15 €</span> für den
+          Aufenthalt - <span className="supersonic">egal, wie lange ihr dann bleibt</span>.
+          Für euer leibliches Wohl sorgt eine Auswahl an heißen und kalten Getränken,
+          sowie ein paar süße und herzhafte Snacks. Falls es mal mehr sein soll, dürft ihr euch aber auch Essen selber mitbringen
+          oder zu uns liefern lassen. Ansonsten gibt es gratis Internet und eine Reihe von Beamern,
+          Lautsprechern und Konsolen, die auf Nachfrage genutzt werden können. Also schaut mal vorbei.
           Wir haben das passende Spiel für jede Gelegenheit :)
-        </p>
-        <p className="justified">Für <b>2€ pro Person und Stunde</b> (Freitags bis Sonntags und an Feiertagen 3€/Person & Stunde) könnt ihr bei uns jedes unserer Spiele spielen.
-          Und das Beste: ihr zahlt <b>maximal 10€ bzw. 15€</b> für den Aufenthalt - <b>egal, wie lange ihr bleibt</b>!
-          Darüber hinaus dürft ihr gerne eure eigenen Speisen und Getränke mitbringen, oder euch direkt zu uns liefern lassen. Wir haben aber auch eine Auswahl an heißen und kalten Getränken im Angebot, sowie ein paar süße und herzhafte Snacks.
-          Es gibt bei uns außerdem gratis Internet und eine Reihe von Beamern, Lautsprechern und Konsolen, die auf Nachfrage gerne während eueres Aufenthaltes genutzt werden können.
         </p>
         <Gallery>
           <div className="section--about--gallery">
