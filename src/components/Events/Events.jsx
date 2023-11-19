@@ -38,7 +38,7 @@ export default function Events() {
       <div className="tile shadow">
         <p className="justified">
           Für alle, die Lust auf ein außergewöhnliches Team-Event haben, bieten wir etwas ganz
-          besonderes an: <span className="supersonic">Blood on the Clocktower!</span> Unter
+          Besonderes an: <span className="supersonic">Blood on the Clocktower!</span> Unter
           professioneller Anleitung durch unser Team macht ihr euch auf die Jagd nach einem Dämon,
           schmiedet Intrigen und versucht die Pläne der Bösen zu durchkreuzen. Es sei denn, ihr gehört selbst zu ihnen...
         </p>
