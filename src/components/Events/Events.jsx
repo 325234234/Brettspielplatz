@@ -34,18 +34,21 @@ export default function Events() {
             </Item>
         </Gallery>
       </div>
-      <h1 className="title supersonic">Firmen/Team-Events</h1>
+      <h1 className="title supersonic">Team-Events</h1>
       <div className="tile shadow">
         <p className="justified">
-          Ihr möchtet euer Firmen- oder Team-Event gerne bei uns veranstalten? Kein Problem! Wir bieten euch ein unvergessliches
-          Erlebnis für 10 bis 30 Mitarbeiter, bei dem es unter professioneller Anleitung durch unser Team um Intrigen, Zusammenhalt und
-          die Jagd nach einem Dämonen geht. Wir spielen mit euch ein angeleitetes Social Deduction Spiel, bei dem ihr in 90 bis 180 Minuten
-          lernt, welchen Kollegen man vertrauen kann und wer das beste Pokerface beim Lügen hat.
+          Für alle, die Lust auf ein außergewöhnliches Firmen-Event haben, bieten wir etwas ganz
+          Besonderes an: <span className="supersonic">Blood on the Clocktower!</span> Unter
+          professioneller Anleitung durch unser Team macht ihr euch auf die Jagd nach einem Dämon,
+          schmiedet Intrigen und versucht die Pläne der Bösen zu durchkreuzen. Es sei denn, ihr gehört selbst zu ihnen...
         </p>
         <p className="justified">
-          Ihr habt das ganze Café nur für euch und spielt bei uns bis spätestens 16 Uhr ein durch uns organisiertes "Murder Mystery Abenteuer".
-          Von 10 bis 30 Personen, zum Festpreis inklusive Snacks und Getränke. Es kann auch gerne auf eigene Kosten ein Catering oder Mittagessen
-          organisiert werden. Interesse? Schreibt uns eine Mail an <a href="mailto:kontakt@brettspielplatz.berlin">kontakt@brettspielplatz.berlin</a>
+          Wir spielen mit euch ein angeleitetes Social-Deduction-Spiel, bei dem ihr in 90 bis 180 Minuten
+          lernt, welchen Kollegen man vertrauen kann und wer lügt, ohne dabei das Gesicht zu verziehen.
+          Dafür habt ihr das ganze Café für euch und spielt bis spätestens 16 Uhr mit 10 bis 30 Personen - alles
+          zum Festpreis und inklusive Snacks und Getränke. Wer will, darf auch gerne auf eigene Kosten ein Catering oder Mittagessen
+          organisieren und in den Laden bringen lassen. Schreibt uns bei Interesse einfach eine Mail
+          an <a href="mailto:kontakt@brettspielplatz.berlin" target="_blank">kontakt@brettspielplatz.berlin</a>. Wir freuen uns auf euch!
         </p>
         <Gallery>
           <Item
