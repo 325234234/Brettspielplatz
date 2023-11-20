@@ -37,7 +37,7 @@ export default function Events() {
       <h1 className="title supersonic">Team-Events</h1>
       <div className="tile shadow">
         <p className="justified">
-          Für alle, die Lust auf ein außergewöhnliches Team-Event haben, bieten wir etwas ganz
+          Für alle, die Lust auf ein außergewöhnliches Firmen-Event haben, bieten wir etwas ganz
           Besonderes an: <span className="supersonic">Blood on the Clocktower!</span> Unter
           professioneller Anleitung durch unser Team macht ihr euch auf die Jagd nach einem Dämon,
           schmiedet Intrigen und versucht die Pläne der Bösen zu durchkreuzen. Es sei denn, ihr gehört selbst zu ihnen...
@@ -48,7 +48,7 @@ export default function Events() {
           Dafür habt ihr das ganze Café für euch und spielt bis spätestens 16 Uhr mit 10 bis 30 Personen - alles
           zum Festpreis und inklusive Snacks und Getränke. Wer will, darf auch gerne auf eigene Kosten ein Catering oder Mittagessen
           organisieren und in den Laden bringen lassen. Schreibt uns bei Interesse einfach eine Mail
-          an <a href="mailto:kontakt@brettspielplatz.berlin">kontakt@brettspielplatz.berlin</a>. Wir freuen uns auf euch!
+          an <a href="mailto:kontakt@brettspielplatz.berlin" target="_blank">kontakt@brettspielplatz.berlin</a>. Wir freuen uns auf euch!
         </p>
         <Gallery>
           <Item
