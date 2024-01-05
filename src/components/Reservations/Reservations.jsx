@@ -23,14 +23,14 @@ export default function Reservations() {
 
   function handleSubmit(event) {
     event.preventDefault()
- 
+
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
       .then((result) => {
         console.log(result.text)
       }, (error) => {
         console.log(error.text)
       })
-      
+
     setRequestSend(true)
   }
 
@@ -49,8 +49,8 @@ export default function Reservations() {
   twoDaysAhead.setDate(todaysDate.getDate() + 2)
   const sixtyDaysAhead = new Date()
   sixtyDaysAhead.setDate(todaysDate.getDate() + 60)
-  
-  return (    
+
+  return (
     <section className="content maxWidth1200">
       <h1 className="title supersonic">Reservierungen</h1>
       <div className="tile shadow">
@@ -59,7 +59,7 @@ export default function Reservations() {
           Solltet ihr für <span className="supersonic">mehr als zwölf Personen</span> oder <span className="supersonic">außerhalb unserer regulären Öffnungszeiten</span> reservieren
           wollen, dann schreibt uns bitte noch eine kurze Nachricht in der ihr uns die genaue Personenzahl
           und eure Pläne mitteilt. Wir melden uns innerhalb von ein oder zwei Tagen bei euch.
-        </p>              
+        </p>
         <form className="section--reservation--form" ref={form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
           <input
@@ -93,9 +93,12 @@ export default function Reservations() {
             onChange={handleChange}
             placeholder="030 / 55522236"
             required />
-
+          <div>
+            Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 48 Stunden</span> im
+            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Solltet ihr weniger als 4 Personen
+            sein, kommt einfach ohne Reservierung vorbei - wir finden schon einen Platz für euch!
+          </div>
           <div className="section--reservation--layoutContainer">
-            
             <div className="inputContainer">
               <label htmlFor="date">Tag</label>
               <input
@@ -157,10 +160,10 @@ export default function Reservations() {
             className="section--reservation--misc"
             value={formData.misc}
             onChange={handleChange}
-            placeholder="Sonstige Informationen :)" 
+            placeholder="Sonstige Informationen :)"
           />
 
-          <input 
+          <input
             className="section--reservation--button supersonic outline"
             type="submit"
             value={requestSend ? "Anfrage verschickt!" : "Abschicken"}
