@@ -92,9 +92,9 @@ export default function About() {
         <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und
           Süßgetränken <span className="supersonic">über 350 Spiele</span> zum ausgiebigen Spielen und Genießen an.
           Unser Konzept: Bezahlt nur für die Zeit, die ihr im Laden verbringt. Von Montag bis Donnerstag sind
-          es <span className="supersonic">2 € pro Person und Stunde</span>, von Freitag bis
-          Sonntag und an Feiertagen <span className="supersonic">3 € pro Person und Stunde.</span> Bleibt ihr fünf Stunden oder länger,
-          zahlt ihr <span className="supersonic">10 € bzw. 15 €</span> für den
+          es <span className="supersonic">2,50 € pro Person und Stunde</span>, von Freitag bis
+          Sonntag und an Feiertagen <span className="supersonic">4 € pro Person und Stunde.</span> Bleibt ihr fünf Stunden oder länger,
+          zahlt ihr <span className="supersonic">12,50 € bzw. 20 €</span> für den
           Aufenthalt - <span className="supersonic">egal, wie lange ihr dann bleibt</span>.
           Für euer leibliches Wohl sorgt eine Auswahl an heißen und kalten Getränken,
           sowie ein paar süße und herzhafte Snacks. Falls es mal mehr sein soll, dürft ihr euch aber auch Essen selber mitbringen
