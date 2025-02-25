@@ -45,10 +45,10 @@ export default function Reservations() {
   }
 
   const todaysDate = new Date()
-  const twoDaysAhead = new Date()
-  twoDaysAhead.setDate(todaysDate.getDate() + 2)
-  const sixtyDaysAhead = new Date()
-  sixtyDaysAhead.setDate(todaysDate.getDate() + 60)
+  const minDaysAhead = new Date()
+  minDaysAhead.setDate(todaysDate.getDate() + 4)
+  const maxDaysAhead = new Date()
+  maxDaysAhead.setDate(todaysDate.getDate() + 90)
 
   return (
     <section className="content maxWidth1200">
@@ -94,9 +94,8 @@ export default function Reservations() {
             placeholder="030 / 55522236"
             required />
           <div>
-            Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 48 Stunden</span> im
-            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Solltet ihr weniger als 4 Personen
-            sein, kommt einfach ohne Reservierung vorbei - wir finden schon einen Platz für euch!
+            Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 4 Tage</span> im
+            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Reservierungen sind erst ab 4 Personen möglich. 
           </div>
           <div className="section--reservation--layoutContainer">
             <div className="inputContainer">
@@ -108,8 +107,8 @@ export default function Reservations() {
                 className="section--reservation--date section--reservation--input"
                 value={formData.date}
                 onChange={handleChange}
-                min={twoDaysAhead.toISOString().split("T")[0]}
-                max={sixtyDaysAhead.toISOString().split("T")[0]}
+                min={minDaysAhead.toISOString().split("T")[0]}
+                max={maxDaysAhead.toISOString().split("T")[0]}
                 required
               />
             </div>
