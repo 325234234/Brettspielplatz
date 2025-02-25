@@ -45,10 +45,10 @@ export default function Reservations() {
   }
 
   const todaysDate = new Date()
-  const twoDaysAhead = new Date()
-  twoDaysAhead.setDate(todaysDate.getDate() + 2)
-  const sixtyDaysAhead = new Date()
-  sixtyDaysAhead.setDate(todaysDate.getDate() + 60)
+  const minDaysAhead = new Date()
+  minDaysAhead.setDate(todaysDate.getDate() + 4)
+  const maxDaysAhead = new Date()
+  maxDaysAhead.setDate(todaysDate.getDate() + 90)
 
   return (
     <section className="content maxWidth1200">
@@ -94,7 +94,7 @@ export default function Reservations() {
             placeholder="030 / 55522236"
             required />
           <div>
-            Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 48 Stunden</span> im
+            Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 4 Tage</span> im
             Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Solltet ihr weniger als 4 Personen
             sein, kommt einfach ohne Reservierung vorbei - wir finden schon einen Platz für euch!
           </div>
