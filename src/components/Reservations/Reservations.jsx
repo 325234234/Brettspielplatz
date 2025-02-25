@@ -95,7 +95,7 @@ export default function Reservations() {
             required />
           <div>
             Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 4 Tage</span> im
-            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Reservierungen sind erst ab 4 Personen möglich. 
+            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. 
           </div>
           <div className="section--reservation--layoutContainer">
             <div className="inputContainer">
