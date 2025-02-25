@@ -95,8 +95,9 @@ export default function Reservations() {
             required />
           <div>
             Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 4 Tage</span> im
-            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Solltet ihr weniger als 4 Personen
-            sein, kommt zwischen Montag und Donnerstag einfach ohne Reservierung vorbei - wir finden schon einen Platz für euch! Von Freitag bis Sonntag könnte es allerdings sein, dass wir gerade ausgebucht sind.
+            Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Reservierungen sind erst ab 4 Personen möglich. 
+            Von Montag bis Freitag könnt ihr mit weniger Leuten aber auch ohne Reservierung euer Glück versuchen - meistens finden wir 
+            dann noch ein Plätzchen für euch. Von Freitag bis Sonntag ist das leider nicht möglich, da dann in der Regel alle unsere Tische mit größeren Gruppen belegt sind.
           </div>
           <div className="section--reservation--layoutContainer">
             <div className="inputContainer">
