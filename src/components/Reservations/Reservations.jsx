@@ -96,7 +96,7 @@ export default function Reservations() {
           <div>
             Aus organisatorischen Gründen nehmen wir Reservierungen nur <span className="supersonic">mindestens 4 Tage</span> im
             Voraus und für <span className="supersonic">4 Personen oder mehr</span> an. Solltet ihr weniger als 4 Personen
-            sein, kommt einfach ohne Reservierung vorbei - wir finden schon einen Platz für euch!
+            sein, kommt zwischen Montag und Donnerstag einfach ohne Reservierung vorbei - wir finden schon einen Platz für euch! Von Freitag bis Sonntag könnte es allerdings sein, dass wir gerade ausgebucht sind.
           </div>
           <div className="section--reservation--layoutContainer">
             <div className="inputContainer">
@@ -108,8 +108,8 @@ export default function Reservations() {
                 className="section--reservation--date section--reservation--input"
                 value={formData.date}
                 onChange={handleChange}
-                min={twoDaysAhead.toISOString().split("T")[0]}
-                max={sixtyDaysAhead.toISOString().split("T")[0]}
+                min={minDaysAhead.toISOString().split("T")[0]}
+                max={maxDaysAhead.toISOString().split("T")[0]}
                 required
               />
             </div>
