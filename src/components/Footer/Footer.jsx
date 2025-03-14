@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
         </a>
         <p>030 / 55522236</p>
-        <a href="mailto:kontakt@brettspielplatz.de">kontakt@brettspielplatz.de</a>
+        <a href="mailto:kontakt@brettspielplatz.berlin">kontakt@brettspielplatz.berlin</a>
       </div>
       <div>
         <h2 className="supersonic outline">Öffnungszeiten</h2>
