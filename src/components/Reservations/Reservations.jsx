@@ -58,7 +58,8 @@ export default function Reservations() {
           Hier könnt ihr Reservierungen anfragen (erst ab vier Personen!). Gebt hierfür einfach alle benötigten Informationen an.
           Solltet ihr für <span className="supersonic">mehr als zwölf Personen</span> oder <span className="supersonic">außerhalb unserer regulären Öffnungszeiten</span> reservieren
           wollen, dann schreibt uns bitte noch eine kurze Nachricht in der ihr uns die genaue Personenzahl
-          und eure Pläne mitteilt. Wir melden uns innerhalb von ein oder zwei Tagen bei euch.
+          und eure Pläne mitteilt. Wir melden uns innerhalb von ein oder zwei Tagen bei euch.<br/>
+          Solltet ihr eure Reservierung absagen müssen, dann bitte <b>mindestens 24 Stunden im Voraus!</b>
         </p>
         <form className="section--reservation--form" ref={form} onSubmit={handleSubmit}>
           <label htmlFor="name">Name</label>
