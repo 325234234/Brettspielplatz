@@ -90,7 +90,7 @@ export default function About() {
         <img src={hero} className="section--about--hero"/>
         <h2 className="section--about--heading supersonic">Willkommen in Berlins größtem Brettspielecafé!</h2>
         <p className="justified">Im Herzen Moabits bieten wir euch bei Kaffee, Waffeln und
-          Süßgetränken <span className="supersonic">über 350 Spiele</span> zum ausgiebigen Spielen und Genießen an.
+          Süßgetränken <span className="supersonic">über 550 Spiele</span> zum ausgiebigen Spielen und Genießen an.
           Unser Konzept: Bezahlt nur für die Zeit, die ihr im Laden verbringt. Von Montag bis Donnerstag sind
           es <span className="supersonic">2,50 € pro Person und Stunde</span>, von Freitag bis
           Sonntag und an Feiertagen <span className="supersonic">4 € pro Person und Stunde.</span> Bleibt ihr fünf Stunden oder länger,
@@ -98,8 +98,7 @@ export default function About() {
           Aufenthalt - <span className="supersonic">egal, wie lange ihr dann bleibt</span>.
           Für euer leibliches Wohl sorgt eine Auswahl an heißen und kalten Getränken,
           sowie ein paar süße und herzhafte Snacks. Falls es mal mehr sein soll, dürft ihr euch aber auch Essen selber mitbringen
-          oder zu uns liefern lassen. Ansonsten gibt es gratis Internet und eine Reihe von Beamern,
-          Lautsprechern und Konsolen, die auf Nachfrage genutzt werden können. Also schaut mal vorbei.
+          oder zu uns liefern lassen. Gratis Internet ist auch inklusive. Also schaut mal vorbei.
           Wir haben das passende Spiel für jede Gelegenheit :)
         </p>
         <Gallery>
