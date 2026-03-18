@@ -16,7 +16,7 @@ export default function News() {
 
         const response = await fetch(`https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${SHEET_TAB_NAME}?alt=json&key=${API_KEY}`)
         const data = await response.json()
-        setNews(data.values.slice(1,6))
+        setNews(data.values.slice(1,10))
 
         setLoading(false)
       }
